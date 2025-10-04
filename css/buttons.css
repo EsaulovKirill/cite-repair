@@ -57,7 +57,7 @@
 }
 
 .button-icon--dropdown {
-    background-image: url(/icons/dropdown.svg);
+    background-image: url(icons/dropdown.svg);
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -74,39 +74,39 @@
 }
 
 .button-icon--lenovo {
-    background-image: url(/icons/brands/lenovo.svg);
+    background-image: url(icons/brands/lenovo.svg);
 }
 
 .button-icon--samsung {
-    background-image: url(/icons/brands/samsung.svg);
+    background-image: url(icons/brands/samsung.svg);
 }
 
 .button-icon--apple {
-    background-image: url(/icons/brands/apple.svg);
+    background-image: url(icons/brands/apple.svg);
 }
 
 .button-icon--VSonic {
-    background-image: url(/icons/brands/vsonic.svg);
+    background-image: url(icons/brands/vsonic.svg);
 }
 
 .button-icon--bosch {
-    background-image: url(/icons/brands/bosch.svg);
+    background-image: url(icons/brands/bosch.svg);
 }
 
 .button-icon--hp {
-    background-image: url(/icons/brands/hp.svg);
+    background-image: url(icons/brands/hp.svg);
 }
 
 .button-icon--acer {
-    background-image: url(/icons/brands/acer.svg);
+    background-image: url(icons/brands/acer.svg);
 }
 
 .button-icon--sony {
-    background-image: url(/icons/brands/sony.svg);
+    background-image: url(icons/brands/sony.svg);
 }
 
 .button-icon-close-feedback {
-    background-image: url(/icons/close.svg);
+    background-image: url(icons/close.svg);
 }
 
 .read-next,
@@ -121,7 +121,7 @@
 
 .read-next::before,
 .show-all::before {
-    content: url(/icons/read-next-button.svg);
+    content: url(icons/read-next-button.svg);
     position: absolute;
     left: -20%;
 }
