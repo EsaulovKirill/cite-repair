@@ -1,0 +1,142 @@
+.button-icon {
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.button-icon--close {
+    background-image: url(/icons/close.svg);
+}
+
+.button-icon--search {
+    background-image: url(/icons/search.svg);
+}
+
+.button-icon--call {
+    background-image: url(/icons/call.svg);
+}
+
+.button-icon--chat {
+    background-image: url(/icons/chat.svg);
+}
+
+.button-icon--user {
+    background-image: url(/icons/user.svg);
+}
+
+.button-icon--burger {
+    background-image: url(/icons/burger.svg);
+}
+
+.button-icon--repair {
+    background-image: url(/icons/repair.svg);
+}
+
+.button-icon--checkstatus {
+    background-image: url(/icons/checkstatus.svg);
+}
+
+.brands-container__button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 240px;
+    height: 72px;
+    background-color: #fff;
+    padding-right: 16px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    flex-shrink: 0;
+}
+
+.button-icon--dropdown {
+    background-image: url(/icons/dropdown.svg);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+.button-icon--dropdown:hover {
+    transform: scale(1.72);
+    transition-duration: 0.2s;
+}
+
+.brands-container::-webkit-scrollbar,
+.repair-container::-webkit-scrollbar {
+    display: none;
+}
+
+.button-icon--lenovo {
+    background-image: url(/icons/brands/lenovo.svg);
+}
+
+.button-icon--samsung {
+    background-image: url(/icons/brands/samsung.svg);
+}
+
+.button-icon--apple {
+    background-image: url(/icons/brands/apple.svg);
+}
+
+.button-icon--VSonic {
+    background-image: url(/icons/brands/vsonic.svg);
+}
+
+.button-icon--bosch {
+    background-image: url(/icons/brands/bosch.svg);
+}
+
+.button-icon--hp {
+    background-image: url(/icons/brands/hp.svg);
+}
+
+.button-icon--acer {
+    background-image: url(/icons/brands/acer.svg);
+}
+
+.button-icon--sony {
+    background-image: url(/icons/brands/sony.svg);
+}
+
+.button-icon-close-feedback {
+    background-image: url(/icons/close.svg);
+}
+
+.read-next,
+.show-all {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.read-next::before,
+.show-all::before {
+    content: url(/icons/read-next-button.svg);
+    position: absolute;
+    left: -20%;
+}
+
+
+
+.repair-container__button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 240px;
+    height: 160px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    flex-shrink: 0;
+    padding: 16px;
+}

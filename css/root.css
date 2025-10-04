@@ -1,0 +1,88 @@
+:root {
+    --text-font-color: #1B1C21;
+    --nav-menu-text-color: #7E7E82;
+    --main-background-color: #fff;
+    --lasurite: #41F6D7;
+    --page-padding-x: 18px 16px;
+    --buttons-column-gap: 16px;
+}
+
+/* --------------временно---------------- */
+.modal {
+    display: block;
+}
+
+
+/* ------------ */
+
+/* скроллбары */
+.main-menu__list::-webkit-scrollbar {
+    display: none;
+}
+
+html::-webkit-scrollbar {
+    display: block;
+}
+
+/* ---------------- */
+
+html {
+    box-sizing: border-box;
+    min-width: 320px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'TTLakes-regular', sans-serif;
+    background-color: #F8F8F8;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+
+h1 {
+    font-family: 'TTLakes-bold', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    padding: var(--page-padding-x);
+    margin: 0;
+}
+
+h1::before {
+    content: '';
+    background-color: var(--lasurite);
+    width: 4px;
+    height: 40px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+
+h2 {
+    font-family: 'TTLakes-medium' sans-serif;
+    font-weight: 100;
+    padding: 0 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-top: 1px solid var(--lasurite);
+    margin: 0;
+    padding: 16px;
+}
