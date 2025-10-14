@@ -1,0 +1,33 @@
+.main-container {
+  width: 100%;
+  margin-top: 88px;
+
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    margin-top: 0;
+    display: flex;
+  }
+}
+
+.content-container {
+  position: relative;
+  margin-left: auto;
+
+  @media (min-width: 1440px) {
+    max-width: 1120px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-container {
+    margin-top: 0; 
+  }
+  
+  .modal {
+    display: flex;
+  }
+
+  .feedback {
+    display: none;
+  }
+}

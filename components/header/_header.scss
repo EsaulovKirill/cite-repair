@@ -1,0 +1,114 @@
+.header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  padding: $mobile-margin-x;
+  background-color: $secondary-color;
+  max-width: 1440px;
+
+  &__logo {
+    position: relative;
+
+    &::after {
+      content: '';
+      background-color: #EAEAEA;
+      width: 2px;
+      height: 32px;
+      position: absolute;
+      left: 113px;
+      top: 13px;
+    }
+  }
+
+  &__left-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: $buttons-column-gap;
+  }
+
+  &__tablet-buttons {
+    display: flex;
+    column-gap: $buttons-column-gap;
+  }
+
+  &__common-buttons {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      column-gap: $buttons-column-gap;
+      align-items: center;
+
+      &::before {
+        content: '';
+        background-color: #EAEAEA;
+        width: 2px;
+        height: 32px;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      display: flex;
+      column-gap: 32px;
+    }
+  }
+
+  &__button-desc {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    @media (min-width: 1440px) {
+      display: flex;
+      column-gap: $buttons-column-gap;
+    }
+  }
+
+  &__right-side {
+    @media (min-width: 768px) {
+      display: flex;
+      column-gap: $buttons-column-gap;
+      align-items: center;
+    }
+  }
+
+  &__button-wrapper {
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+
+    @media (min-width: 1440px) {
+      display: flex;
+      column-gap: $buttons-column-gap;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 24px;
+    justify-content: flex-end;
+    background-color: transparent;
+    position: absolute;
+
+    &__left-side,
+    &__tablet-buttons,
+    &__common-buttons::before {
+      display: none;
+    }
+  }
+}
+
+.button-icon--user {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}

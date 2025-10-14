@@ -35,4 +35,4 @@ overlay.addEventListener('click', closeFeed);
 
 openFeedButton.addEventListener('click', openFeed);
 
-closeFeedButton.addEventListener('click', closeFeed)
+closeFeedButton.addEventListener('click', closeFeed);

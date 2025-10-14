@@ -1,0 +1,146 @@
+.button-icon {
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+
+    &--close {
+        background-image: url(/icons/close.svg);
+    }
+
+    &--search {
+        background-image: url(/icons/search.svg);
+    }
+
+    &--call {
+        background-image: url(/icons/call.svg);
+    }
+
+    &--chat {
+        background-image: url(/icons/chat.svg);
+    }
+
+    &--user {
+        background-image: url(/icons/user.svg);
+    }
+
+    &--burger {
+        background-image: url(/icons/burger.svg);
+    }
+
+    &--repair {
+        background-image: url(/icons/repair.svg);
+    }
+
+    &--checkstatus {
+        background-image: url(/icons/checkstatus.svg);
+    }
+
+    &--dropdown {
+        background-image: url(/icons/dropdown.svg);
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+
+        &:hover {
+            transform: scale(1.72);
+            transition-duration: 0.2s;
+        }
+    }
+
+    &--lenovo {
+        background-image: url(../../icons/brands/lenovo.svg);
+    }
+
+    &--samsung {
+        background-image: url(../../icons/brands/samsung.svg);
+    }
+
+    &--apple {
+        background-image: url(../../icons/brands/apple.svg);
+    }
+
+    &--VSonic {
+        background-image: url(../../icons/brands/vsonic.svg);
+    }
+
+    &--bosch {
+        background-image: url(../../icons/brands/bosch.svg);
+    }
+
+    &--hp {
+        background-image: url(../../icons/brands/hp.svg);
+    }
+
+    &--acer {
+        background-image: url(../../icons/brands/acer.svg);
+    }
+
+    &--sony {
+        background-image: url(../../icons//brands/sony.svg);
+    }
+
+    &-close-feedback {
+        background-image: url(../../icons/close.svg);
+    }
+}
+
+.brands-container {
+    &__button {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 240px;
+        height: 72px;
+        background-color: #fff;
+        padding-right: 16px;
+        border: 1px solid #eaeaea;
+        border-radius: 6px;
+        background-repeat: no-repeat;
+        background-position: 16px center;
+        flex-shrink: 0;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.repair-container {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 240px;
+        height: 160px;
+        background-color: #fff;
+        border: 1px solid #eaeaea;
+        border-radius: 6px;
+        flex-shrink: 0;
+        padding: 16px;
+    }
+}
+
+.read-next,
+.show-all {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 32px;
+
+    &::before {
+        content: url(../../icons/read-next-button.svg);
+        position: absolute;
+        left: -20%;
+    }
+}

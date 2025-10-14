@@ -1,0 +1,125 @@
+.burger-menu {
+    min-width: 320px;
+    max-width: 320px;
+    width: 100%;
+    height: 100vh;
+    padding: 24px;
+    font-family: 'TTLakes-regular', sans-serif;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 11;
+    transition: 0.3s ease-in-out;
+    position: fixed;
+    overflow: hidden;
+    transform: translateX(-100%);
+    top: 0;
+
+    &--active {
+        transform: translateX(0);
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 17px;
+        }
+    }
+
+    &__body {
+        margin-top: 20px;
+        margin-bottom: 32px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+        justify-content: center;
+
+        @media (min-width: 1440px) {
+            margin-top: 38px;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        font-weight: 500;
+    }
+
+    &__item {
+        position: relative;
+
+        &:hover {
+            color: #7E7E82;
+
+            &::before {
+                content: '';
+                background-color: var(--lasurite);
+                width: 4px;
+                height: 32px;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+                position: absolute;
+                left: -24px;
+                top: -5px;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tel {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+    }
+}
+
+.switch-lang__lang:hover {
+    color: #7E7E82;
+    transition-duration: 0.3s;
+}
+
+@media (min-width: 1440px) {
+    .burger-menu {
+        display: flex;
+        padding: 30px 22px;
+        background-color: #fff;
+        transform: translateX(0);
+        z-index: 1;
+        position: fixed;
+    }
+
+    .button-icon--close {
+        display: none;
+    }
+}

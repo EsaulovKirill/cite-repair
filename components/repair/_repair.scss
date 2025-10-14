@@ -1,0 +1,53 @@
+.repair {
+  margin-bottom: 24px;
+  position: relative;
+
+  &-container {
+    margin: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    column-gap: 16px;
+    row-gap: 16px;
+    overflow-x: scroll;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      justify-content: space-between;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    // @media (min-width: 1440px) {
+    // //   margin-left: 0;
+    // //   margin-right: 0;
+    // }
+
+    &__button {
+      position: relative;
+      width: 224px;
+      height: 160px;
+
+      @media (min-width: 1440px) {
+        width: 240px;
+        height: 160px;
+      }
+
+      &:last-child {
+        display: none;
+
+        @media (min-width: 1440px) {
+          display: flex;
+        }
+      }
+    }
+
+    &__desc {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+  }
+}

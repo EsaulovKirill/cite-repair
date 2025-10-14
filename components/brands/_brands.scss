@@ -1,0 +1,33 @@
+.brands {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.brands-container {
+  margin: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  column-gap: 16px;
+  row-gap: 16px;
+  overflow-x: scroll;
+  margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.show-all {
+  display: none;
+  margin: auto;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    position: relative;
+    left: 30px;
+  }
+}

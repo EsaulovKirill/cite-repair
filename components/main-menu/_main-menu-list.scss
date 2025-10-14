@@ -1,0 +1,35 @@
+.main-menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: $mobile-margin-y;
+
+    @media (min-width: 768px) {
+      padding: $mobile-margin-x;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 0;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    padding: 8px 16px;
+
+    @media (min-width: 1440px) {
+      padding: 8px 21px;
+    }
+
+    &:first-child,
+    &:hover {
+      border-radius: 6px;
+      outline: 2px solid #B8FFEC;
+      outline-offset: -2px;
+      background-color: #fff;
+    }
+  }
+}
